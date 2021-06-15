@@ -1,28 +1,32 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="container-fluid">
+    <img alt="Brew logo" src="./assets/beer.png" class="app" width="200">
+    <!-- A-3. (begins in HelloWorld.vue) Here, the HelloWorld component 
+    receives the property message. Here, it can be modified. -->
+    <!--<HomeBrew msg="Welcome to My Brew App"/>-->
+    <Brew />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+//import HomeBrew from './components/HomeBrew.vue';
+import Brew from './components/Brew.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    //HomeBrew,
+    Brew
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.app {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* The above three lines center an image */
+  margin-top: 30px;
 }
 </style>

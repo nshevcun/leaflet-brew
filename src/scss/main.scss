@@ -1,0 +1,5 @@
+//$body-bg: #fff1ba; //<--B-4. This helps modify the Bootstrap CSS variables to your needs.
+// The variable above may also be found in: node modules -> bootstrap -> scss -> variables
+
+// B-2. Import the Custom SCSS file into the main SCSS file.
+@import "custom";
